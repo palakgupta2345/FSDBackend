@@ -1,42 +1,100 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Reset & General Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+/* Main Heading */
+h1 {
+  background-color: #2d4059;
+  color: #ffffff;
+  font-size: 32px;
   text-align: center;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Form Sections */
+form, .section {
+  background-color: #ffffff;
+  border: 2px solid #2d4059;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Inputs */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f9fafb;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Buttons */
+button,
+input[type="submit"] {
+  background-color: #3a539b;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
 }
 
-.card {
-  padding: 2em;
+button:hover,
+input[type="submit"]:hover {
+  background-color: #2d3e74;
 }
 
-.read-the-docs {
-  color: #888;
+/* Table Styling */
+table {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-size: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+th {
+  background-color: #2d4059;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f6fc;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Section Titles */
+.section h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #34495e;
 }
