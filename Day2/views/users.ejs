@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Cards</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background color */
+        }
+        .card {
+            margin: 20px;
+            background-color: #007bff; /* Bootstrap primary color */
+            color: white; /* Text color */
+            border-radius: 10px; /* Rounded corners */
+            transition: transform 0.2s; /* Animation for hover effect */
+        }
+        .card:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+        .card ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+        }
+        .card li {
+            padding: 10px 0; /* Add padding to list items */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Light border for separation */
+        }
+        .card li:last-child {
+            border-bottom: none; /* Remove border from last item */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">User  Cards</h1>
+        <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul>
+                                <li>Name: <%= users.name %></li>
+                                <li>Class: <%= users.class %></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
